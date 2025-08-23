@@ -1,0 +1,246 @@
+body{
+    background-color:rgb(8, 8, 66) ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.home{
+    
+    /* height: 100vh;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.wrapper{
+    margin: 30px;
+}
+
+.log{
+    border-radius: 30PX;
+    background-color: rgb(10, 10, 92);
+    border: rgba(3, 3, 80, 0.637);
+    box-shadow: 0 0 30px 0 rgb(5, 5, 214);
+    width: 75%;
+    height: 121px;
+    padding: 15px 5px 5px 15px;
+}
+.first{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 blue;
+   height: 50px;
+   width: 316px;
+   margin: 2px;
+   font-size: 25px;
+}
+.last{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 blue;
+    height: 50px;
+    width: 316px;
+    margin: 2px;
+    font-size: 25px;
+   
+}
+.user{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 blue;
+    height: 50px;
+    width: 316px;
+    margin: 2px;
+    font-size: 25px;
+   
+
+}
+.email{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 blue;
+    height: 50px;
+    width: 420px;
+    margin: 2px;
+    font-size: 25px;
+    
+}
+.pas{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 blue;
+    height: 50px;
+    width: 420px;
+    margin: 2px;
+    font-size: 25px;
+    
+}
+.button{
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 blue;
+    height: 50px;
+    width: 115px;
+    margin: 2px;
+    font-size: 25px;
+    background-color: rgb(28, 28, 223);
+    color: white;
+    border: solid 1px white;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+.all{
+    border:none;
+    background-color: rgb(8, 8, 65) ;
+    
+    color: aliceblue;
+    transition: 0.3s ease;
+}
+@media (max-width:600px){
+    .log{
+        height: 70%;
+        
+        
+       
+    }
+    .all{
+        width: 85%;
+        display: block;
+        margin:15px auto auto auto;
+    }
+    .first{
+        margin:30px auto auto auto;
+        
+    }
+    .button{
+        display: block;
+        margin:30px auto auto auto;
+
+    }
+}
+@media (min-width:601px) and (max-width:1102px){
+    .log{
+        height: 50%;
+
+    }
+    .first,.last {
+        width: 47%;
+        margin:10px auto auto 5px ;
+    }
+    
+    .user{
+        width: 97%;
+        margin:10px auto auto 5px ;
+
+    }
+    .button{
+        width: 130px;
+        display: block;
+        margin:15px auto auto auto ;
+    }
+    
+
+    .email,.pas{
+        display: block;
+        margin:10px auto auto auto ;
+    }
+   
+    
+
+}
+.all:hover{
+    transform: scale(1.1);
+
+}
+.button:hover{
+    transform: scale(1.1);
+}
+/* From Uiverse.io by mobinkakei */ 
+.wrapper {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+
+
