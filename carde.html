@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/sssss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Product management</title>
+    
+</head>
+
+<body>
+    <div class="contenr">
+        <h2 class="titr">curde</h2>
+        <p class="titr"oiuytreasy>Welcome to the Product Organization Program</p>
+        <input id="titel" class="titel" type="text" placeholder="Products">
+        <div class="price">
+            <div class="box1">
+                <input onkeyup="calcelTotal()" id="price" type="number" placeholder="price">
+                <input onkeyup="calcelTotal()" id="taxes"  type="number" placeholder="taxes">
+            </div>
+            <div class="box2">
+                <input onkeyup="calcelTotal()" id="ads" type="number" placeholder="ads">
+                <input onkeyup="calcelTotal()" id="discount"  type="number" placeholder="discount">
+            </div>
+           
+           
+            <span id="total"></span>
+        </div>
+        <div class="count">
+            <input id="count"  type="number" placeholder="count">
+            <input id="category" type="text" placeholder="category">
+        </div>
+        <button onclick="creatPro()" id="creat" class="creat">creat</button>
+        <div id="deletAll">
+
+        </div>
+        
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Products</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delet</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+       
+        </table>
+
+        
+    </div>
+    <script src="script.js"></script>
+    
+
+
+    
+</body>
+</html>

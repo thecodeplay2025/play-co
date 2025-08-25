@@ -1,0 +1,271 @@
+/* *{
+    margin: 0;
+    padding: 0;
+
+}
+h2{
+    font-size: 40px;
+    
+    margin-top: 100px;
+    color: #fff;
+    opacity: 0;
+    transition:  opacity 1.5s ease ;
+}
+h2.visible{
+    opacity: 1;
+}
+p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: opacity 3.5s ease;
+}
+p.visible{
+    opacity: 1;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(27, 24, 39);
+}
+.contenr{
+    width: 80%;
+    background-color: rgb(27, 24, 39);
+    text-align: center;
+}
+.titel{
+    width: 90%;
+}
+.price{
+    width: 94%;
+    display: flex;
+    justify-content: left;
+    margin-left: 14px;
+}
+
+.price input{
+    width: 20.7%;
+    margin-left: 10px;
+}
+input{
+    height:40px;
+    color:#fff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    background-color: rgb(78, 78, 80);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.count input{
+    width: 90%;
+}
+input:focus{
+    scale: 1.02;
+    background-color: rgb(155, 152, 152);
+    color: black;
+}
+#total{
+    display: inline-block;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 9px 7px 11px 7px;
+}
+#total::before{
+    content: 'total:';
+}
+.creat{
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(19, 19, 156);
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.creat:hover ,.du:hover{
+    scale: 1.03;
+    background-color: rgb(48, 4, 167);
+}
+table{
+    width: 90%;
+    margin-left: 60px;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+}
+table th{
+    font-size: larger;
+}
+.du{
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: rgb(19, 19, 156);
+    border: none;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.btn{
+     width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(19, 19, 156);
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.btn:hover{
+     scale: 1.03;
+    background-color: rgb(48, 4, 167);
+}
+.box1,.box2{
+    width: 80%;
+}
+.box1 input,.box2 input{
+    width: 40%;
+}
+.box2{
+    margin-left: 0;
+} */
+ /* Add responsive styles to sssss.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+body {
+    padding: 10px;
+}
+
+.contenr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgb(27, 24, 39);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.price input {
+    width: 45%;
+    margin: 5px 2.5%;
+}
+
+.box1, .box2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1 input, .box2 input {
+    width: 45%;
+    margin: 5px 2.5%;
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.count input {
+    width: 80%;
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    overflow-x: auto; /* Make table scrollable on small screens */
+    margin-top: 20px;
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+    .price {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price input {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .box1, .box2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 input, .box2 input {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th {
+        position: sticky;
+        top: 0;
+        background: #333;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #555;
+        position: relative;
+        padding-left: 50px;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 480px) {
+    input[type="text"],
+    input[type="number"] {
+        font-size: 14px;
+    }
+
+    .creat, .btn {
+        font-size: 18px;
+    }
+}
